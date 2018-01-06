@@ -1,3 +1,53 @@
+body
+	font-family: "Open Sans", sans-serif;
+	background-color: $bodyColor;
+
 a[ng-click],
 a[data-toggle="dropdown"]
 	cursor: pointer;
+
+.divider
+	border-bottom: 1px solid lightgrey;
+
+.row
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+p,
+li
+	color: $textColor;
+	text-align: justify;
+	line-height: 2;
+
+h1
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 30px;
+
+h2,
+h3,
+h4
+	font-size: 18px;
+	font-weight: bold;
+
+h2
+	margin-top: 50px;
+	margin-bottom: 30px;
+
+	&:first-child
+		margin-top: 0;
+
+h3
+	margin-top: 0;
+	margin-bottom: 20px;
+
+.label
+	&.label-default
+		background-color: white;
+		color: #333;
+
+strong
+	color: #636363;
+
+ul
+	padding-left: 20px;

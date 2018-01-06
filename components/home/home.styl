@@ -1,8 +1,15 @@
+$profileBoxBoderColor = #bfbfbf;
+$smallTextColor = #a8a8a8;
+
 .state-home
 	margin-bottom: 300px;
 
 	img
 		max-width: 100%;
+
+	small
+		font-size: 13px;
+		color: $smallTextColor;
 
 	.intro
 		font-size: 0;
@@ -13,6 +20,9 @@
 			font-size: 14px;
 			float: none;
 
+			&.col1
+				text-align: center;
+
 	.divider
 		width: 100%;
 
@@ -20,12 +30,20 @@
 		text-align: center;
 
 		.profile-box
-			box-shadow: 0 0 1px black;
+			box-shadow: 0 0 3px $profileBoxBoderColor;
 			position: relative;
+			padding-bottom: 20px;
+			margin-bottom: 30px;
 
 			> .label
 				position: absolute;
 				left: 10px;
+				top: 10px;
+				font-size: 14px;
+
+			.icon-like
+				position: absolute;
+				right: 10px;
 				top: 10px;
 				font-size: 14px;
 
@@ -44,6 +62,8 @@
 					font-size: 14px;
 
 			.profile-info
+				margin-top: 30px;
+
 				.icon-wrapper
 					font-size: 0;
 
@@ -54,10 +74,26 @@
 					.icon
 						display: inline-block;
 						vertical-align: middle;
-						margin-right: 10px;
+						margin-right: 20px;
+						font-size: 20px;
+						font-weight: bold;
 
 						&:last-child
 							margin-right: 0;
+
+						.icon
+							max-width: 30px;
+							margin-right: 5px;
+
+		.offer-box
+			p
+				text-align: center;
+				margin-bottom: 5px;
+
+			.amount
+				font-weight: bold;
+				margin-bottom: 30px;
+				display: inline-block;
 
 	.profile-footer
 		display: flex;
