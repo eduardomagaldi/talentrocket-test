@@ -1,3 +1,68 @@
 .state-home
-	h1
-		color: orange;
+	margin-bottom: 300px;
+
+	img
+		max-width: 100%;
+
+	.intro
+		font-size: 0;
+
+		.col
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 14px;
+			float: none;
+
+	.divider
+		width: 100%;
+
+	.profile
+		text-align: center;
+
+		.profile-box
+			box-shadow: 0 0 1px black;
+			position: relative;
+
+			> .label
+				position: absolute;
+				left: 10px;
+				top: 10px;
+				font-size: 14px;
+
+			.profile-logo
+				width: 80%;
+				margin-top: -40px;
+				border: 1px solid lightgrey;
+				margin-left: auto;
+				margin-right: auto;
+				position: relative;
+
+				.label
+					position: absolute;
+					left: -10px;
+					bottom: -10px;
+					font-size: 14px;
+
+			.profile-info
+				.icon-wrapper
+					font-size: 0;
+
+					h3,
+					.icon
+						font-size: 14px;
+
+					.icon
+						display: inline-block;
+						vertical-align: middle;
+						margin-right: 10px;
+
+						&:last-child
+							margin-right: 0;
+
+	.profile-footer
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.item
+			margin-bottom: 0;
